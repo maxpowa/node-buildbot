@@ -1,0 +1,16 @@
+{
+  "name": "node-buildbot",
+  "version": "1.0.0",
+  "description": "Scrape email and get emails matching a specific filter",
+  "main": "index.js",
+  "dependencies": {
+    "googleapis": "^2.0.4",
+    "node-slackbot": "0.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Gurela",
+  "license": "ISC"
+}

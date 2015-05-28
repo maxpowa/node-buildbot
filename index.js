@@ -148,8 +148,8 @@ var slackbot = require('node-slackbot');
 var bot = new slackbot(config.slack_api_key);
 
 bot.use(function(message, cb) {
+  if (message.channel === undefined || message.text === undefined) return;
   if ('message' == message.type) {
-    console.log(message.user + ' said: ' + message.text);
     if (message.text.indexOf('?builds') === 0) {
       getSVMXVersions(bot, message);
     }
